@@ -1,10 +1,7 @@
-#print('вносим изменеия')
-#print('вносим изменеия')
+# print('вносим изменеия')
+# print('вносим изменеия')
 
-#print('на гитхаб')
-
-
-
+# print('на гитхаб')
 
 
 # map(func, iterable) - вызывает функцию для кажд iterable
@@ -52,9 +49,6 @@
 # func_test()
 
 
-
-
-
 # Строки
 # 0b101010 - двоичная сист bin()
 # 0o22 - восьмиричная сист oct()
@@ -92,9 +86,6 @@ import re
 # print(re.sub(reg, "!", s)) #replace
 
 
-
-
 # f = open("test.txt")
 # print(*f)
 # f.close()
-

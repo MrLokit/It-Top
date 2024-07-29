@@ -1,0 +1,21 @@
+1 --- SELECT DISTINCT City2 FROM Zakaz
+2 --- SELECT DISTINCT City FROM Zakaz
+3 --- SELECT Cnum, Name, Kod FROM Zakaz WHERE Kod = 1005
+4 --- SELECT Cnum, Name, Rating FROM Zakaz WHERE Rating > 380
+5 --- SELECT Cnum, Name, Rem FROM Zakaz WHERE Rem IS NULL
+6 --- SELECT Kod, Sum FROM Zakaz WHERE Sum > 4000
+7 --- SELECT Cnum, Name, City, Sum FROM Zakaz WHERE Sum < 1000 AND City = "Иркутск"
+8 --- SELECT Cnum, Name, Rating FROM Zakaz WHERE 100 <= Rating <= 270
+9 --- SELECT Cnum, Name, City FROM Zakaz WHERE City <> City2
+10 --- SELECT Kod FROM Zakaz WHERE Rating < 200 OR Rating > 350
+11 --- SELECT Name, Prod FROM Zakaz WHERE Prod = 'столы обеденные'
+12 --- SELECT Name FROM Zakaz WHERE Name LIKE '%а%а%'
+13 --- SELECT Name, Kod FROM Zakaz WHERE Name LIKE 'К%'
+14 --- SELECT Kod FROM Zakaz WHERE City = 'Химки' AND Prod = 'стулья'
+15 --- SELECT Name FROM Zakaz WHERE City = 'Химки' AND City = City2 AND 1000 < Sum < 1750
+16 --- SELECT Kod FROM Zakaz WHERE Prod <> 'сейфы'
+17 --- SELECT Prod, Sum FROM Zakaz WHERE Prod = 'диваны' AND Sum > 4000
+18 --- SELECT Name FROM Zakaz WHERE Prod = 'стулья' AND Sum > 1200
+19 --- SELECT Name FROM Zakaz WHERE City <> 'Иркутск' AND Rating < 200
+20 --- SELECT Name FROM Zakaz WHERE Rem = 'льготная доставка'
+21 --- SELECT Name FROM Zakaz WHERE Sum > 14000 AND City <> 'Москва' AND City <> 'Липецк'

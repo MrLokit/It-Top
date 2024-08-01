@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Про Flask</title>
+</head>
+<body>
+    <ul class="menu">
+        {% for m in menu %}
+            <li><a href="{{ url_for(m.url) }}" {% if page_title == m.name %}class="active"{% endif %}>{{ m.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <h1>{{ page_title }}</h1>
+    
+    {% macro input_field(type, name, placeholder) %}
+        <p><input type="{{ type }}" name="{{ name }}" placeholder="{{ placeholder }}" ></p>
+    {% endmacro %}
+    
+    {{ input_field('text', 'firstname', 'Имя') }}
+    {{ input_field('text', 'lastname', 'Фамилия') }}
+    {{ input_field('text', 'address', 'Адрес') }}
+    {{ input_field('tel', 'phone', 'Телефон') }}
+    {{ input_field('email', 'email', 'Почта') }}
+</body>
+</html>

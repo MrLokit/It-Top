@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио</title>
+    <style>
+        .person-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .person-card img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Портфолио</h1>
+    <div>
+        {% for person in people %}
+        <div class="person-card">
+            <h2>{{ person.last_name }} {{ person.first_name }} {{ person.middle_name }}</h2>
+            <p>Год рождения: {{ person.birth_year }}</p>
+            <img src="{{ url_for('static', filename='images/' + person.last_name.lower() + '_' + person.first_name.lower() + '.jpg') }}" alt="Фото">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

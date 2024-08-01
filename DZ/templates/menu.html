@@ -1,0 +1,5 @@
+<ul class="menu">
+    {% for m in menu %}
+        <li><a href="{{ url_for(m.url) }}" {% if page_title == m.name %}class="active"{% endif %}>{{ m.name }}</a></li>
+    {% endfor %}
+</ul>

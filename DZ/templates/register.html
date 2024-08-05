@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    {% if session.logged_in %}
+        <a href="{{ url_for('news') }}">Перейти на страницу новостей</a>
+    {% else %}
+        <form method="post">
+            <label for="username">Логин:</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Пароль:</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <a href="{{ url_for('login') }}">Уже есть аккаунт? Войти</a>
+    {% endif %}
+</body>
+</html>

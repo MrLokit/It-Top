@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06.08.24</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+            font-family: Arial;
+            background-color: #ccccff;
+        }
+
+        header {
+            background-color: #fffee0;
+            padding: 30px 40px; 
+     
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        span {
+            font-size: xx-large;
+        }
+
+        a, span {
+            text-decoration: none;
+            color: purple;
+            background-color: #fffee0;
+        }
+
+        .header-links, span {
+            margin: 0;
+        }
+
+        .header-links {
+            display: flex;
+            background-color: #fffee0;
+        }
+
+        .header-links a {
+            margin-left: 20px; 
+        }
+
+        .header-links a:first-child {
+            margin-left: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 50px;
+
+        }
+
+        .num_posts {
+            font-weight: bold;
+            background-color: #fffee0;
+            font-size: large;
+            padding: 10px 5px;
+            width: 95%;
+            margin-bottom: 20px;
+        }
+
+        .post1, .post2 {
+            background-color: #fffee0;
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 95%;
+        }
+
+        .name {
+            background-color: purple;
+            padding: 10px;
+            font-weight: bold;
+            color: #fff;
+            font-size: large;
+        }
+
+        .date, .discribe1, .discribe2 {
+            background-color: #fffee0;
+            font-size: small;
+            padding: 20px 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <span>portfolio</span>
+        <div class="header-links">
+            <a href="#">Главная</a>
+            <a href="#">Блог</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Блог</h1>
+
+        <p class='num_posts'>Постов: 5</p>
+        <div class='posts'>
+            <div class='post1'>
+                <p class='name'>99,9 % результата - это отсутствие результата</p>
+                <p class='date'>30.05.2023</p>
+                <p class='discribe1'>куча текста </p>
+            </div>  
+
+            <div class='post1'>
+                <p class='name'>Зачем нужна информационная безопасность</p>
+                <p class='date'>25.05.2023</p>
+                <p class='discribe1'>куча текста </p>
+            </div> 
+        </div>
+    </main>
+</body>
+</html>
